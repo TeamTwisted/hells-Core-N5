@@ -1,4 +1,4 @@
-#!/bin/bash
+﻿#!/bin/bash
 
 # Bash Color
 green='\033[01;32m'
@@ -15,7 +15,7 @@ DEFCONFIG="hells_defconfig"
 
 # Kernel Details
 BASE_HC_VER="hC"
-VER="-b13-M"
+VER="-b15-M"
 HC_VER="$BASE_HC_VER$VER"
 
 # Vars
