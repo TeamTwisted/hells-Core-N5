@@ -1,3 +1,5 @@
+CFLAGS_KERNEL := -Wno-misleading-indentation
+
 obj-$(CONFIG_CRYPTO_DEV_QCEDEV) += qcedev.o
 ifeq ($(CONFIG_CRYPTO_DEV_QCE50), y)
 	obj-$(CONFIG_CRYPTO_DEV_QCE) += qce50.o

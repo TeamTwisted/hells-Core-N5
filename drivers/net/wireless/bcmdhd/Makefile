@@ -1,3 +1,5 @@
+CFLAGS_KERNEL := -Wno-misleading-indentation
+
 # bcmdhd
 #
 #
@@ -5,7 +7,8 @@
 #
 #
 
-DHDCFLAGS = -Wall -Wstrict-prototypes -Dlinux -DBCMDRIVER               \
+DHDCFLAGS = -Wall -Wstrict-prototypes -Wno-tautological-compare \
+        -Dlinux -DBCMDRIVER               \
 	-DBCMDONGLEHOST -DUNRELEASEDCHIP -DBCMDMA32 -DBCMFILEIMAGE            \
 	-DDHDTHREAD -DSDTEST -DBDC                                            \
 	-DDHD_BCMEVENTS -DSHOW_EVENTS -DPROP_TXSTATUS -DBCMDBG                \
